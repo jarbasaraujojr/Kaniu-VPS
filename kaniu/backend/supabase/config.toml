@@ -1,0 +1,22 @@
+# Este é o arquivo de configuração do Supabase
+project_id = "kaniu"
+org_id = "kaniu-org"
+
+[api]
+port = 54321
+schemas = ["public", "auth"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+major_version = 15
+
+[studio]
+port = 54323
+
+[inbucket]
+port = 54324
+
+[storage]
+file_size_limit = "50MiB"
